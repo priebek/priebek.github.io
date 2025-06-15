@@ -1,0 +1,389 @@
+{
+    "basic_info": {
+      "description_header": "Hi",
+      "description": "I'm Bjarne Kjær. Here's my portfolio of bigger and smaller projects I've worked on during the years as an engineer. It's a mix of personal projects, freelance work, hackathons and work for companies.",
+      "section_name": {
+        "about": "About me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience"
+      }
+    },
+    "projects": [
+      {
+        "title": "Big Data",
+        "subtitle": "ETL from multiple data sources to a data lake",
+        "startDate": "2025",
+        "description": "ETL from multiple data sources to a data lake, using kafka event, API and data storage. The project is focused on creating a scalable and efficient data pipeline that can handle large volumes of data from various sources.",
+        "images": [
+          "images/portfolio/bigdata/p1.png"
+        ],
+        "url": "",
+        "technologies": [
+        {
+          "name": "Python",
+          "class": "devicon-python-plain"
+        }
+        ]
+      },
+      {
+        "title": "Optimize smart factory",
+        "subtitle": "Monitoring and securing stability of IT systems in a smart factory",
+        "startDate": "2024",
+        "description": "The presented result aims to give a better insight into how measurement could be created for monitoring and securing stability for IT systems in a smart factory",
+        "images": [
+          "images/portfolio/masterthesis/p1.png"
+        ],
+        "url": "",
+        "technologies": [
+        {
+          "name": "C#",
+          "class": "devicon-csharp-plain"
+        }
+        ]
+      },
+      {
+        "title": "Laser Engraver",
+        "subtitle": "Integrating laser engraver through RS485",
+        "startDate": "2023",
+        "description": "API enabling a laser engraver to automatically engrave elements. The API is built to integrate with the laser engraver through RS485 communication. It allows for easy control and management of the engraving process, making it suitable for various applications.",
+        "images": [
+          "images/portfolio/laserengraver/p1.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "name": "C#",
+            "class": "devicon-csharp-plain"
+          }
+        ]
+      },
+      {
+        "title": "MES Kafka Stream",
+        "subtitle": "Increase business value in a smart factory with event driven architecture",
+        "startDate": "2023",
+        "description": "By leveraging on MES Kafka stream and focus on what would give business values, it has empowered the processes and been more efficient. The factory can handle the production load, is able to scale up and focus can be on quality improvement for the overall goal and provide value to the company.",
+        "images": [
+          "images/portfolio/meskafka/p1.jpg",
+          "images/portfolio/meskafka/p2.png"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "name": "C#",
+            "class": "devicon-csharp-plain"
+          }
+        ]
+      },
+      {
+        "title": "Light Control System",
+        "subtitle": "Clapper turns on the lights on Arduino",
+        "startDate": "2022",
+        "description": "Using a Piezo as a clapper on Arduino. Centered around the problem of automatically generating sensing systems. The system should automatically be able to adjust the different lights in a room depending on the conditions of the room. The specifics of this will depend on the actual implementation of the system logic made through a DSL.",
+        "images": [
+          "images/portfolio/piezo/p1.jpg",
+          "images/portfolio/piezo/p2.jpg",
+          "images/portfolio/piezo/p3.png"
+        ],
+        "url": "",
+        "technologies": [
+        {
+          "name": "Arduino",
+          "class": "devicon-arduino-plain"
+        },
+        {
+          "name": "C",
+          "class": "devicon-c-plain"
+        },
+        {
+          "name": "Java",
+          "class": "devicon-java-plain"
+        }
+        ]
+      },
+      {
+        "title": "CNC Simulation",
+        "subtitle": "Automated simulation of CNC jobs",
+        "startDate": "2021",
+        "description": "Fully automated simulation of CNC jobs. The simulation is able to simulate the CNC job and show the result through notifications and approve for physical execution. The simulation is built to be used in a smart factory environment, where it can help optimize the production process and reduce downtime.",
+        "images": [
+          "images/portfolio/simulation/p1.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "name": "C#",
+            "class": "devicon-csharp-plain"
+          }
+        ]
+      },
+      {
+        "title": "Kayak Kyro",
+        "subtitle": "Accelerometer and Activity Recognition",
+        "startDate": "2020",
+        "description": "Mobile app to track kayaking activities. The app uses accelerometer data to recognize different activities and provide insights into the user's performance. It is designed to help kayakers improve their skills and track their progress over time.",
+        "images": [
+          "images/portfolio/kyro/p2.png",
+          "images/portfolio/kyro/p1.jpg",
+          "images/portfolio/kyro/p3.png"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "name": "C#",
+            "class": "devicon-csharp-plain"
+          }
+        ]
+      },
+      {
+        "title": "User Management System",
+        "subtitle": "Integration for the education sector",
+        "startDate": "2019",
+        "description": "Part of the development of a User Management System. Made integration to existing system, developed frontend, backend, API, databases and mobile apps",
+        "images": [
+          "images/portfolio/ums/p1.png",
+          "images/portfolio/ums/p2.png"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          },
+          {
+            "class": "devicon-android-plain",
+            "name": "Android"
+          },
+          {
+            "class": "devicon-java-plain",
+            "name": "Java"
+          },
+          {
+            "class": "devicon-apple-original",
+            "name": "iOS"
+          },
+          {
+            "class": "devicon-objectivec-plain",
+            "name": "Objective-C"
+          }
+        ]
+      },
+      {
+        "title": "SMS Modem",
+        "subtitle": "Custom Linux box able to send out SMS",
+        "startDate": "2018",
+        "description": "Custom Linux box able to send out SMS, working as a SMS Modem with API integration",
+        "images": [
+          "images/portfolio/smsmodem/p1.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-cplusplus-plain",
+            "name": "C++"
+          }
+        ]
+      },
+      {
+        "title": "App for Rejsekortet",
+        "subtitle" : "Automatically check-in/out",
+        "startDate": "2016",
+        "description": "Project for travelser using Rejsekortet where the user can use their mobile to check in and out.",
+        "images": [
+          "images/portfolio/checkout/p1.png",
+          "images/portfolio/checkout/p2.png"
+        ],
+        "url": "",
+        "technologies": [
+        ]
+      },
+      {
+        "title": "Aarhus idrætsaktiviteter",
+        "subtitle": "Conventus enhancements with sport activities in Aarhus",
+        "startDate": "2015",
+        "description": "Project to show all sport activities in Aarhus. It was a project for Idrætsfagligt Forum in Aarhus Municipality.",
+        "images": [
+          "images/portfolio/aarhus/p1.png"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          }
+        ]
+      },
+      {
+        "title": "No Hope",
+        "subtitle": "Unity game with light and dark mechanics",
+        "startDate": "2014",
+        "description": "In a world where you have been kidnapped and is now moved as human traffic. You are trying to escape with little hope of success.",
+        "images": [
+          "images/portfolio/nohope/p1.jpg"
+        ],
+        "url": "https://priebe.itch.io/no-hope",
+        "technologies": [
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          }
+        ]
+      },
+      {
+        "title": "Happy Appy",
+        "subtitle": "Children Application Framework",
+        "startDate": "2013",
+        "description": "Children Application Framework. It's a place where parents can safely let their kids play on their smartphone and tablet. HappyAppy is an app, that is an app store for parents. It solely contains high quality apps for children. All app goes through review process and user test with children that ensures high quality.",
+        "images": [
+          "images/portfolio/happyappy/p1.jpg",
+          "images/portfolio/happyappy/p2.jpg"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-android-plain",
+            "name": "Android"
+          },
+          {
+            "class": "devicon-java-plain",
+            "name": "Java"
+          },
+          {
+            "class": "devicon-apple-original",
+            "name": "iOS"
+          },
+          {
+            "class": "devicon-objectivec-plain",
+            "name": "Objective-C"
+          }
+        ]
+      },
+      {
+        "title": "Childary",
+        "subtitle": "Aarhus Startup Weekend - Best Innovation Idea",
+        "startDate": "2012",
+        "description": "This was 7 years before Aula. My team and I won the award for best innovation idea at Aarhus Startup Weekend. The daycare was info the parents about their childrens activities.",
+        "images": [
+          "images/portfolio/childary/p1.png"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-android-plain",
+            "name": "Android"
+          },
+          {
+            "class": "devicon-java-plain",
+            "name": "Java"
+          },
+          {
+            "class": "devicon-apple-original",
+            "name": "iOS"
+          },
+          {
+            "class": "devicon-objectivec-plain",
+            "name": "Objective-C"
+          }
+        ]
+      },
+      {
+        "title": "Playstadium",
+        "subtitle": "RSS reader on Android and iOS",
+        "startDate": "2012",
+        "description": "Developed Android and iPhone app for Playstadium as a freelance. Playstadium was a newssite for gamers, the app contained the news articles and forum for gamers.",
+        "images": [
+          "images/portfolio/playstadium/p1.png",
+          "images/portfolio/playstadium/p2.png"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-android-plain",
+            "name": "Android"
+          },
+          {
+            "class": "devicon-java-plain",
+            "name": "Java"
+          },
+          {
+            "class": "devicon-apple-original",
+            "name": "iOS"
+          },
+          {
+            "class": "devicon-objectivec-plain",
+            "name": "Objective-C"
+          }
+        ]
+      },      
+      {
+        "title": "DOL2200 FarmOnline",
+        "subtitle": "Integrating alarm system componets with FarmOnline",
+        "startDate": "2010",
+        "description": "",
+        "images": [
+          "images/portfolio/dol2200/p1.jpg"
+        ],
+        "url": "",
+        "technologies": [
+        {
+          "name": "C#",
+          "class": "devicon-csharp-plain"
+        }
+        ]
+      },
+      {
+        "title": "B&O Beosound 5",
+        "subtitle": "Prototyping interfaces",
+        "startDate": "2009",
+        "description": "Made different prototypes for the B&O Beosound 5 interface. The project was focused on creating a user-friendly interface for the Beosound 5, which is a high-end music system. The prototypes were used to test different design concepts and gather feedback from users.",
+        "images": [
+          "images/portfolio/beosound5/p1.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "Angular"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "The LEGO Group",
+        "title": "Senior IT Engineer",
+        "years": "06.2019 - present",
+        "mainTech": [
+          "C#"
+        ],
+        "technologies": [
+          "REST API",
+          "EF Core",
+          ".NET Core",
+          "React",
+          "Databricks"
+        ]
+      },
+      {
+        "company": "inLogic",
+        "title": "Developer",
+        "years": "03.2012 - 05.2019",
+        "mainTech": [
+          "C#"
+        ],
+        "technologies": [
+          "Android",
+          "iOS",
+          "Windows",
+          "C#",
+          "Objective-C",
+          "Java",
+          "ASP.NET"
+        ]
+      }
+    ]
+  }

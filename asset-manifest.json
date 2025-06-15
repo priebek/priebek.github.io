@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/priebek.github.io/static/css/main.36918b24.chunk.css",
+    "main.js": "/priebek.github.io/static/js/main.3e3c3350.chunk.js",
+    "main.js.map": "/priebek.github.io/static/js/main.3e3c3350.chunk.js.map",
+    "runtime-main.js": "/priebek.github.io/static/js/runtime-main.90a7cfd9.js",
+    "runtime-main.js.map": "/priebek.github.io/static/js/runtime-main.90a7cfd9.js.map",
+    "static/css/2.d64471e2.chunk.css": "/priebek.github.io/static/css/2.d64471e2.chunk.css",
+    "static/js/2.4c102bb7.chunk.js": "/priebek.github.io/static/js/2.4c102bb7.chunk.js",
+    "static/js/2.4c102bb7.chunk.js.map": "/priebek.github.io/static/js/2.4c102bb7.chunk.js.map",
+    "index.html": "/priebek.github.io/index.html",
+    "precache-manifest.29bd945fcffe72dd7b3ce2e6870c8f3c.js": "/priebek.github.io/precache-manifest.29bd945fcffe72dd7b3ce2e6870c8f3c.js",
+    "service-worker.js": "/priebek.github.io/service-worker.js",
+    "static/css/2.d64471e2.chunk.css.map": "/priebek.github.io/static/css/2.d64471e2.chunk.css.map",
+    "static/css/main.36918b24.chunk.css.map": "/priebek.github.io/static/css/main.36918b24.chunk.css.map",
+    "static/js/2.4c102bb7.chunk.js.LICENSE.txt": "/priebek.github.io/static/js/2.4c102bb7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.90a7cfd9.js",
+    "static/css/2.d64471e2.chunk.css",
+    "static/js/2.4c102bb7.chunk.js",
+    "static/css/main.36918b24.chunk.css",
+    "static/js/main.3e3c3350.chunk.js"
+  ]
+}

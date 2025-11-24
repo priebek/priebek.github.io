@@ -10,5 +10,4 @@
 ## Deploy
 
 1. Make sure `homepage` is removed from `package.json`
-2. `npm run build`
-3. `npm run deploy`
+2. `npm run deploy` (this will automatically run `npm run build` first via the predeploy script)

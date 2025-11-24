@@ -1,6 +1,6 @@
 @import '../src/scss/themes/theme-dark.scss';
 @import '../src/scss/themes/theme-light.scss';
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 html {
 	font-size: 62.5%;
@@ -16,34 +16,30 @@ html {
 }
 
 .title-container {
-	height: 50px;
+	height: 35px;
 }
 
 .title-styles {
-	font-family: 'Raleway', sans-serif;
-	font-size: 250%;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 200%;
+	font-weight: 600;
+	letter-spacing: -0.02em;
 }
 
 .header-icon {
-	height: 150px;
-	width: 150px;
+	height: 60px;
+	width: 60px;
 }
 
 header {
 	position: relative;
-	height: 520px;
-	min-height: 450px;
+	height: 340px;
+	min-height: 340px;
 	width: 100%;
-	background-size: cover;
-	-webkit-background-size: cover;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 	text-align: center;
 	overflow: hidden;
-	background-color: #e9d5a1;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	padding-top: 150px;
+	padding-top: 0px;
 	padding-bottom: 0;
 }
 
@@ -53,14 +49,14 @@ header {
 }
 
 .project-date {
-	font-size: 16px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	padding: 8px 15px 2px 15px;
+	font-size: 14px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	padding: 8px 15px;
 	position: relative;
 	z-index: -500;
-	border-top: 5px solid #696969;
-	border-radius: 0 0 5px 5px;
-	background-color: #696969;
+	border-radius: 8px;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 	color: white;
 }
 
@@ -80,13 +76,14 @@ header {
 }
 
 header h1 {
-	font-size: 400%;
+	font-size: 280%;
 	text-align: center;
-	font-weight: 600 !important;
-	color: #353239;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	margin: 0 auto 18px auto;
+	font-weight: 700 !important;
+	color: #ffffff;
+	font-family: 'Space Grotesk', sans-serif;
+	margin: 0 auto 8px auto;
 	width: 100%;
+	letter-spacing: -0.03em;
 }
 
 .slider-image {
@@ -141,7 +138,8 @@ header h1 {
 }
 
 #about h1 {
-	padding-top: 5%;
+	padding-top: 1.5%;
+	padding-bottom: 0.5%;
 	font: 18px/24px 'opensans-bold', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -161,14 +159,12 @@ header h1 {
 	padding: 10px 10px 5px;
 	text-align: center;
 	text-decoration: none;
-	-webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-	-moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-	box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-	-webkit-transition: all .20s linear;
-	-moz-transition: all .20s linear;
-	transition: all .20s linear;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
+	border-radius: 16px;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 	z-index: 0;
 	position: relative;
+	border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .foto div:after {
@@ -180,21 +176,19 @@ header h1 {
 }
 
 .foto div:hover {
-	-webkit-transform: scale(1.01);
-	-moz-transform: scale(1.01);
-	transform: scale(1.01);
+	transform: translateY(-8px) scale(1.02);
 	z-index: 10;
-	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
-	-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
-	box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12), 0 8px 16px rgba(0, 0, 0, 0.08);
 }
 
 .project-title-settings {
 	margin-top: 5%;
-	font: 18px/24px 'opensans-bold', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	color: black;
+	font-family: 'Inter', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: none;
+	letter-spacing: -0.01em;
+	color: #1a202c;
 	text-align: center;
 }
 
@@ -206,7 +200,7 @@ header h1 {
 .polaroid span {
 	background: #ffffff;
 	display: inline-block;
-	margin: 55px 75px 30px;
+	margin: 20px 40px 15px;
 	padding: 15px 15px 30px;
 	text-align: center;
 	text-decoration: none;
@@ -247,7 +241,7 @@ header h1 {
 }
 
 #resume {
-	background: #efe1bd;
+	background: linear-gradient(180deg, #edf2f7 0%, #e2e8f0 100%);
 }
 
 .experience-icon {
@@ -369,7 +363,7 @@ header h1 {
 }
 
 #portfolio {
-	background: #efe1bd;
+	background: linear-gradient(180deg, #f7fafc 0%, #edf2f7 100%);
 	padding-bottom: 5%;
 }
 
@@ -415,10 +409,12 @@ header h1 {
 .section-title {
 	padding-top: 5%;
 	padding-bottom: 5%;
-	font: 18px/24px 'opensans-bold', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	color: #fff;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	text-transform: none;
+	letter-spacing: -0.02em;
+	color: #1a202c;
 	text-align: center;
 }
 

@@ -22,8 +22,8 @@
         "url": "",
         "technologies": [
         {
-          "name": "Java",
-          "class": "devicon-java-plain"
+          "name": "TypeScript",
+          "class": "devicon-typescript-plain"
         },
         {
           "name": "GitHub",

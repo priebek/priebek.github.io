@@ -1,7 +1,194 @@
+// ============================================
+// MODERN MINIMAL LIGHT THEME
+// ============================================
+
+// Color Palette
+$light-bg-primary: #ffffff;
+$light-bg-secondary: #f8fafc;
+$light-bg-tertiary: #f1f5f9;
+$light-bg-elevated: #ffffff;
+
+// Text Colors
+$light-text-primary: #0f172a;
+$light-text-secondary: #475569;
+$light-text-muted: #94a3b8;
+
+// Accent Color (Teal/Cyan - darker for light mode)
+$light-accent: #0891b2;
+$light-accent-hover: #0e7490;
+$light-accent-muted: rgba(8, 145, 178, 0.1);
+
+// Borders & Shadows
+$light-border: #e2e8f0;
+$light-shadow: rgba(15, 23, 42, 0.08);
+$light-glow: rgba(8, 145, 178, 0.15);
+
 body[data-theme="light"] {
-    @import '../src/scss/light-slider.scss';
- 
-    .slider-tab {
-       background-color: #D7CAAA;
-    }
+   background-color: $light-bg-primary;
+   
+   @import '../src/scss/light-slider.scss';
+
+   .slider-tab {
+      background-color: $light-bg-tertiary;
+   }
+
+   .title-styles {
+      color: $light-text-primary;
+   }
+
+   .header-icon {
+      color: $light-accent;
+   }
+
+   .slider-image {
+      border: 2px solid $light-border;
+   }
+
+   .link-href {
+      color: $light-accent;
+      &:hover {
+         color: $light-accent-hover;
+      }
+   }
+
+   .project-date {
+      background-color: $light-bg-tertiary;
+      color: $light-text-secondary;
+      border-top: 2px solid $light-accent;
+   }
+
+   header {
+      background: linear-gradient(135deg, $light-bg-primary 0%, $light-bg-secondary 50%, $light-bg-primary 100%);
+      position: relative;
+      
+      &::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background: radial-gradient(ellipse at 50% 0%, $light-accent-muted 0%, transparent 60%);
+         pointer-events: none;
+      }
+
+      h1 {
+         color: $light-text-primary;
+      }
+   }
+
+   #about {
+      background-color: $light-bg-primary;
+      
+      h1 {
+         color: $light-text-primary;
+         span {
+            color: $light-accent;
+         }
+      }
+      
+      .polaroid span {
+         background: $light-bg-primary;
+         border: 1px solid $light-border;
+         box-shadow: 0 8px 32px $light-shadow;
+      }
+      
+      .card {
+         background: $light-bg-primary;
+         color: $light-text-primary;
+         border: 1px solid $light-border;
+      }
+   }
+
+   #portfolio {
+      background: $light-bg-secondary;
+      
+      .foto div {
+         background: $light-bg-primary;
+         border: 1px solid $light-border;
+         
+         &:hover {
+            border-color: $light-accent;
+            box-shadow: 0 12px 40px $light-shadow, 0 0 20px $light-glow;
+         }
+      }
+   }
+
+   #resume {
+      background: $light-bg-secondary;
+      
+      .experience-badge {
+         background: $light-bg-tertiary !important;
+         color: $light-text-secondary;
+         border: 1px solid $light-border;
+      }
+
+      .main-badge {
+         background: $light-accent !important;
+         color: white;
+      }
+
+      .vertical-timeline-element-date {
+         color: $light-text-secondary;
+      }
+
+      .vertical-timeline-element-icon {
+         background: $light-accent !important;
+         box-shadow: 0 0 0 4px $light-bg-secondary, 0 0 20px $light-glow;
+      }
+
+      .vertical-timeline::before {
+         background: $light-border;
+      }
+
+      .vertical-timeline-element-content {
+         background: $light-bg-primary;
+         border: 1px solid $light-border;
+         box-shadow: 0 4px 20px $light-shadow;
+         
+         .vertical-timeline-element-content-arrow {
+            border-right-color: $light-bg-primary;
+         }
+      }
+   }
+
+   #skills {
+      background: $light-text-primary;
+      
+      .skill-icon:hover {
+         color: $light-accent;
+      }
+      
+      .skills-tile {
+         background: rgba(255, 255, 255, 0.1);
+         border: 1px solid rgba(255, 255, 255, 0.1);
+         
+         &:hover {
+            border-color: $light-accent;
+            background: rgba(8, 145, 178, 0.2);
+         }
+      }
+   }
+
+   footer {
+      background: $light-text-primary;
+      
+      a:hover {
+         color: $light-accent;
+      }
+   }
+
+   .modal-inside .modal-content {
+      background: $light-bg-primary;
+      color: $light-text-primary;
+      border: 1px solid $light-border;
+   }
+
+   .close-icon {
+      color: $light-text-secondary;
+      
+      &:hover {
+         color: $light-accent;
+      }
+   }
 }

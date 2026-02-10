@@ -1,107 +1,321 @@
+// ============================================
+// MODERN MINIMAL DARK THEME
+// ============================================
+
+// Color Palette
+$dark-bg-primary: #0d1117;        // Main background
+$dark-bg-secondary: #161b22;      // Cards, elevated surfaces
+$dark-bg-tertiary: #21262d;       // Hover states, borders
+$dark-bg-elevated: #1c2128;       // Modals, dropdowns
+
+// Text Colors
+$dark-text-primary: #f0f6fc;      // Primary text
+$dark-text-secondary: #8b949e;    // Secondary text
+$dark-text-muted: #6e7681;        // Muted text
+
+// Accent Color (Teal/Cyan)
+$dark-accent: #22d3ee;            // Primary accent
+$dark-accent-hover: #06b6d4;      // Accent hover
+$dark-accent-muted: rgba(34, 211, 238, 0.15); // Accent background
+
+// Borders & Shadows
+$dark-border: #30363d;
+$dark-shadow: rgba(0, 0, 0, 0.4);
+$dark-glow: rgba(34, 211, 238, 0.2);
+
+// Transitions
+$transition-fast: 0.15s ease;
+$transition-base: 0.25s ease;
+$transition-slow: 0.4s ease;
+
 body[data-theme="dark"] {  
+   background-color: $dark-bg-primary;
 
    @import '../src/scss/dark-slider.scss';
 
+   // Smooth scrolling
+   html {
+      scroll-behavior: smooth;
+   }
+
    .slider-tab {
-      background-color: #8C8C8C;
+      background-color: $dark-bg-tertiary;
    }
 
    .title-styles {
-      color: white;
+      color: $dark-text-primary;
+      font-weight: 300;
+      letter-spacing: 0.5px;
    }
 
    .header-icon {
-      color: #3C342C;
-      opacity: 0.8;
+      color: $dark-accent;
+      opacity: 0.9;
    }
 
    .slider-image {
-      border: 5px solid #8C8C8C;
+      border: 2px solid $dark-border;
+      border-radius: 12px;
+      overflow: hidden;
    }
 
    .language {
-      background-color: #494949;
+      background-color: $dark-bg-primary;
    }
 
    .link-href {
-      color: white;
+      color: $dark-accent;
+      transition: color $transition-fast;
+      &:hover {
+         color: $dark-accent-hover;
+      }
    }
 
    .project-date {
-      background-color: #918e97;
-      color: white;
+      background-color: $dark-bg-tertiary;
+      color: $dark-text-secondary;
+      border-top: 2px solid $dark-accent;
+      border-radius: 0 0 8px 8px;
    }
 
    header {
-      background-color: #494949;
+      background: linear-gradient(135deg, $dark-bg-primary 0%, $dark-bg-secondary 50%, $dark-bg-primary 100%);
+      position: relative;
+      
+      &::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background: radial-gradient(ellipse at 50% 0%, $dark-accent-muted 0%, transparent 60%);
+         pointer-events: none;
+      }
+
       h1 {
-         color: white;
+         color: $dark-text-primary;
+         text-shadow: 0 0 40px rgba(34, 211, 238, 0.3);
       }
    }
 
    #about {
-      background-color: #7f7f7f;
-      h1 span {
-         color: white;
+      background-color: $dark-bg-primary;
+      
+      .section-title-about {
+         color: $dark-text-primary;
       }
+      
+      h1 {
+         color: $dark-text-primary;
+         span {
+            color: $dark-accent;
+         }
+      }
+      
       .polaroid span {
-         background:  #6d6d6d;
+         background: transparent;
+         border: none;
+         border-radius: 12px;
+         box-shadow: none;
+         transition: box-shadow 0.3s ease;
+         
+         &:hover {
+            box-shadow: 0 0 20px $dark-glow;
+         }
       }
+      
       .card {
-         background: #6d6d6d;
-         color: white;
+         background: transparent;
+         color: $dark-text-primary;
+         border: none;
+         border-radius: 12px;
+         box-shadow: none;
+         transition: box-shadow 0.3s ease;
+         
+         &:hover {
+            box-shadow: 0 0 25px $dark-glow;
+         }
+         
+         .card-header {
+            background: $dark-bg-tertiary;
+            border-bottom: 1px solid $dark-border;
+         }
       }
    }
 
    #portfolio {
-      background: #5b5b5b;
+      background: $dark-bg-primary;
+      
       .section-title {
-         color: white !important;
+         color: $dark-text-primary !important;
       }
+      
       .foto div {
-         background: #6d6d6d;
+         background: transparent;
+         border: none;
+         border-radius: 12px;
+         box-shadow: none;
+         transition: all $transition-base;
+         
+         &:hover {
+            box-shadow: 0 0 25px $dark-glow;
+            transform: translateY(-4px) scale(1.02);
+         }
+         
+         &:after {
+            color: $dark-text-primary;
+         }
       }
+      
       .project-title-settings {
-         color: white;
+         color: $dark-text-primary;
       }
    }
 
    #resume {
-      filter: brightness(80%);
-      background: #5b5b5b;
+      filter: none;
+      background: $dark-bg-primary;
+      
       .section-title {
-         color: white !important;
+         color: $dark-text-primary !important;
       }
 
       .experience-badge {
-         background: #919191 !important;
-         color: white;
+         background: $dark-bg-tertiary !important;
+         color: $dark-text-secondary;
+         border: 1px solid $dark-border;
       }
 
       .main-badge {
-         background: #919191 !important;
+         background: $dark-accent !important;
+         color: $dark-bg-primary;
+         font-weight: 500;
       }
 
       .vertical-timeline-element-date {
-         color: white;
+         color: $dark-text-secondary;
       }
 
       .vertical-timeline-element-icon {
-         background: #919191 !important;
+         background: $dark-accent !important;
+         box-shadow: 0 0 0 4px $dark-bg-primary, 0 0 20px $dark-glow;
       }
+
+      .vertical-timeline::before {
+         background: $dark-border;
+      }
+
+      .vertical-timeline-element-content {
+         background: $dark-bg-secondary;
+         border: 1px solid $dark-border;
+         border-radius: 12px;
+         box-shadow: 0 4px 20px $dark-shadow;
+         color: $dark-text-primary;
+         transition: box-shadow 0.3s ease, transform 0.3s ease;
+         
+         &:hover {
+            box-shadow: 0 0 25px $dark-glow, 0 4px 20px $dark-shadow;
+            transform: translateY(-2px);
+         }
+         
+         .vertical-timeline-element-title,
+         .vertical-timeline-element-subtitle {
+            color: $dark-text-primary;
+         }
+         
+         .vertical-timeline-element-content-arrow {
+            border-right-color: $dark-bg-secondary;
+         }
+      }
+
       @media only screen and (max-width: 1169px) { 
          .vertical-timeline-element-date {
-            color: black;
+            color: $dark-text-secondary;
+         }
+         .vertical-timeline-element-content .vertical-timeline-element-content-arrow {
+            border-right-color: transparent;
+            border-top-color: $dark-bg-secondary;
+         }
+      }
+   }
+
+   #skills {
+      background: $dark-bg-secondary;
+      
+      .section-title {
+         color: $dark-text-primary;
+      }
+      
+      .skill-icon {
+         color: $dark-text-primary;
+         transition: all $transition-fast;
+         
+         &:hover {
+            color: $dark-accent;
+            transform: scale(1.1);
+         }
+      }
+      
+      .skills-tile {
+         background: $dark-bg-tertiary;
+         border: 1px solid $dark-border;
+         border-radius: 10px;
+         transition: all $transition-base;
+         
+         &:hover {
+            border-color: $dark-accent;
+            background: $dark-accent-muted;
+         }
+      }
+   }
+
+   footer {
+      background: $dark-bg-primary;
+      border-top: 1px solid $dark-border;
+      
+      a, a:visited {
+         color: $dark-text-secondary;
+         transition: color $transition-fast;
+         
+         &:hover {
+            color: $dark-accent;
          }
       }
    }
 
    .modal-inside .modal-content {
-      background: #5b5b5b;
-      color: white;
+      background: $dark-bg-elevated;
+      color: $dark-text-primary;
+      border: 1px solid $dark-border;
+      border-radius: 16px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
    }
 
    .close-icon {
-      color: white;
+      color: $dark-text-secondary;
+      transition: color $transition-fast;
+      
+      &:hover {
+         color: $dark-accent;
+      }
+   }
+
+   // Scrollbar styling
+   ::-webkit-scrollbar {
+      width: 10px;
+   }
+   
+   ::-webkit-scrollbar-track {
+      background: $dark-bg-primary;
+   }
+   
+   ::-webkit-scrollbar-thumb {
+      background: $dark-bg-tertiary;
+      border-radius: 5px;
+      
+      &:hover {
+         background: $dark-accent;
+      }
    }
 }

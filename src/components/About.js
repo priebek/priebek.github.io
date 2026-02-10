@@ -18,10 +18,7 @@ class About extends Component {
     return (
       <section id="about">
         <div className="col-md-12">
-          <h1 style={{ color: "black" }}>
-            <span>{sectionName}</span>
-          </h1>
-          <div className="row center mx-auto mb-5">
+          <div className="row center mx-auto mb-0">
             <div className="col-md-4 mb-5 center">
               <div className="polaroid">
                 <span style={{ cursor: "auto" }}>
@@ -49,25 +46,6 @@ class About extends Component {
             <div className="col-md-8 center">
               <div className="col-md-10">
                 <div className="card">
-                  <div className="card-header">
-                    <span
-                      className="iconify"
-                      data-icon="emojione:red-circle"
-                      data-inline="false"
-                    ></span>{" "}
-                    &nbsp;{" "}
-                    <span
-                      className="iconify"
-                      data-icon="twemoji:yellow-circle"
-                      data-inline="false"
-                    ></span>{" "}
-                    &nbsp;{" "}
-                    <span
-                      className="iconify"
-                      data-icon="twemoji:green-circle"
-                      data-inline="false"
-                    ></span>
-                  </div>
                   <div
                     className="card-body font-trebuchet text-justify ml-3 mr-3"
                     style={{
@@ -76,10 +54,6 @@ class About extends Component {
                       lineHeight: "200%",
                     }}
                   >
-                    <br />
-                    <span className="wave">{hello} :) </span>
-                    <br />
-                    <br />
                     {about}
                   </div>
                 </div>

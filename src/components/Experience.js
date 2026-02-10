@@ -28,6 +28,9 @@ class Experience extends Component {
             </Badge>
           );
         });
+        const isEducation = work.company.toLowerCase().includes("university");
+        const icon = isEducation ? "fa-graduation-cap" : "fa-code";
+        
         return (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -37,7 +40,7 @@ class Experience extends Component {
               color: "#fff",
               textAlign: "center",
             }}
-            icon={<i className="fas fa-code experience-icon"></i>}
+            icon={<i className={`fas ${icon} experience-icon`}></i>}
             key={i}
           >
             <div style={{ textAlign: "left", marginBottom: "4px" }}>
@@ -76,16 +79,6 @@ class Experience extends Component {
         <div className="col-md-8 mx-auto">
           <VerticalTimeline>
             {work}
-            <VerticalTimelineElement
-              iconStyle={{
-                background: "#AE944F",
-                color: "#fff",
-                textAlign: "center",
-              }}
-              icon={
-                <i className="fas fa-hourglass-start mx-auto experience-icon"></i>
-              }
-            />
           </VerticalTimeline>
         </div>
       </section>

@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "description_header": "Hi",
-      "description": "I'm Bjarne Kjær. Here's my portfolio of bigger and smaller projects I've worked on during the years as an engineer. It's a mix of personal projects, freelance work, hackathons and work for companies.",
+      "description": "Here's my portfolio of bigger and smaller projects I've worked on during the years as an engineer. It's a mix of personal projects, freelance work, hackathons and work for companies.",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -369,6 +369,13 @@
         ]
       },
       {
+        "company": "University of Southern Denmark",
+        "title": "Master, Software Engineering",
+        "years": "09.2020 - 06.2024",
+        "mainTech": [],
+        "technologies": []
+      },
+      {
         "company": "inLogic",
         "title": "Developer",
         "years": "03.2012 - 05.2019",
@@ -383,6 +390,49 @@
           "Objective-C",
           "Java",
           "ASP.NET"
+        ]
+      },
+      {
+        "company": "eNemo.dk",
+        "title": "System Developer",
+        "years": "10.2011 - 02.2012",
+        "mainTech": [],
+        "technologies": [
+          "C#",
+          "Web Modules"
+        ]
+      },
+      {
+        "company": "SKOV A/S",
+        "title": "Software Engineer Intern",
+        "years": "04.2010 - 02.2011",
+        "mainTech": [],
+        "technologies": [
+          "C#",
+          "Linux",
+          "RS485"
+        ]
+      },
+      {
+        "company": "Bang & Olufsen",
+        "title": "Junior Software Engineer",
+        "years": "06.2008 - 08.2008",
+        "mainTech": [],
+        "technologies": [
+          "Delphi"
+        ]
+      },
+      {
+        "company": "Aarhus University",
+        "title": "Bachelor, Electronic Design Engineer",
+        "years": "09.2007 - 01.2011",
+        "mainTech": [],
+        "technologies": [
+          "C#",
+          "Java",
+          "C++",
+          "Linux",
+          "Android"
         ]
       }
     ]

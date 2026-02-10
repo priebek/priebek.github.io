@@ -1,7 +1,7 @@
 {
     "basic_info": {
-      "description_header": "From code to creation",
-      "description": "I'm Bjarne Kjær, a Senior IT Engineer who loves building things that solve real problems. Over the years, I've had the pleasure of working on everything from smart factory automation and data pipelines to mobile apps and custom parsers. This portfolio showcases a mix of personal passion projects, hackathon wins, freelance adventures, and professional work. Whether it's wrangling CNC machines, parsing domain-specific languages, or building systems that handle massive data flows, I'm always excited to dive into the next engineering challenge. Take a look around and see what I've been up to!",
+      "description_header": "Hi",
+      "description": "Here's my portfolio of bigger and smaller projects I've worked on during the years as an engineer. It's a mix of personal projects, freelance work, hackathons and work for companies.",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -11,19 +11,24 @@
     },
     "projects": [
       {
-        "title": "DSL Parser",
-        "subtitle": "Domain-Specific Language parser and interpreter",
-        "startDate": "2025",
-        "description": "Custom parser for the PowerMill macro programming language from Autodesk. The project implements a complete parsing solution from scratch with lexical analysis, syntax parsing, error handling, and indexing capabilities. Interprets PowerMill's domain-specific language to enable automated processing and analysis of CNC machining macros with syntax validation and macro transformation.",
+        "title": "Powermill DSL Parser",
+        "subtitle": "Powermill DSL parser for GitHub workflows",
+        "startDate": "2026",
+        "description": "A DSL parser that runs as a GitHub workflow to validate Powermill macro files. The parser performs lexical analysis and syntax checking on macro files, ensuring code quality and catching errors early in the development process through automated CI/CD pipelines.",
         "images": [
-          "images/portfolio/dslparser/p1.png"
+          "images/portfolio/dslparser/p1.png",
+          "images/portfolio/dslparser/p2.png"
         ],
         "url": "",
         "technologies": [
-          {
-            "name": "TypeScript",
-            "class": "devicon-typescript-plain"
-          }
+        {
+          "name": "TypeScript",
+          "class": "devicon-typescript-plain"
+        },
+        {
+          "name": "GitHub",
+          "class": "devicon-github-original"
+        }
         ]
       },
       {
@@ -385,6 +390,13 @@
         ]
       },
       {
+        "company": "University of Southern Denmark",
+        "title": "Master, Software Engineering",
+        "years": "09.2020 - 06.2024",
+        "mainTech": [],
+        "technologies": []
+      },
+      {
         "company": "inLogic",
         "title": "Developer",
         "years": "03.2012 - 05.2019",
@@ -399,6 +411,49 @@
           "Objective-C",
           "Java",
           "ASP.NET"
+        ]
+      },
+      {
+        "company": "eNemo.dk",
+        "title": "System Developer",
+        "years": "10.2011 - 02.2012",
+        "mainTech": [],
+        "technologies": [
+          "C#",
+          "Web Modules"
+        ]
+      },
+      {
+        "company": "SKOV A/S",
+        "title": "Software Engineer Intern",
+        "years": "04.2010 - 02.2011",
+        "mainTech": [],
+        "technologies": [
+          "C#",
+          "Linux",
+          "RS485"
+        ]
+      },
+      {
+        "company": "Bang & Olufsen",
+        "title": "Junior Software Engineer",
+        "years": "06.2008 - 08.2008",
+        "mainTech": [],
+        "technologies": [
+          "Delphi"
+        ]
+      },
+      {
+        "company": "Aarhus University",
+        "title": "Bachelor, Electronic Design Engineer",
+        "years": "09.2007 - 01.2011",
+        "mainTech": [],
+        "technologies": [
+          "C#",
+          "Java",
+          "C++",
+          "Linux",
+          "Android"
         ]
       }
     ]

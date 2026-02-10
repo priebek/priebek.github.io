@@ -73,6 +73,13 @@ class Projects extends Component {
 
     return (
       <section id="portfolio">
+        <div style={{
+          width: "100%",
+          height: "1px",
+          backgroundColor: "#333",
+          marginTop: "0",
+          marginBottom: "60px"
+        }}></div>
         <div className="col-md-12">
           <h1 className="section-title" style={{ color: "black" }}>
             <span>{sectionName}</span>

@@ -11,6 +11,27 @@
     },
     "projects": [
       {
+        "title": "Powermill DSL Parser",
+        "subtitle": "Powermill DSL parser for GitHub workflows",
+        "startDate": "2026",
+        "description": "A DSL parser that runs as a GitHub workflow to validate Powermill macro files. The parser performs lexical analysis and syntax checking on macro files, ensuring code quality and catching errors early in the development process through automated CI/CD pipelines.",
+        "images": [
+          "images/portfolio/dslparser/p1.png",
+          "images/portfolio/dslparser/p2.png"
+        ],
+        "url": "",
+        "technologies": [
+        {
+          "name": "Java",
+          "class": "devicon-java-plain"
+        },
+        {
+          "name": "GitHub",
+          "class": "devicon-github-original"
+        }
+        ]
+      },
+      {
         "title": "Big Data",
         "subtitle": "ETL from multiple data sources to a data lake",
         "startDate": "2025",

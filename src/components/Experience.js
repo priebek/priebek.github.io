@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -85,5 +86,20 @@ class Experience extends Component {
     );
   }
 }
+
+Experience.propTypes = {
+  resumeExperience: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string,
+    company: PropTypes.string,
+    years: PropTypes.string,
+    mainTech: PropTypes.arrayOf(PropTypes.string),
+    technologies: PropTypes.arrayOf(PropTypes.string)
+  })),
+  resumeBasicInfo: PropTypes.shape({
+    section_name: PropTypes.shape({
+      experience: PropTypes.string
+    })
+  })
+};
 
 export default Experience;

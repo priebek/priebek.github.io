@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import Typical from "react-typical";
 
 class Header extends Component {
@@ -12,7 +13,7 @@ class Header extends Component {
 
     const HeaderTitleTypeAnimation = React.memo( () => {
       return <Typical className="title-styles" steps={this.titles} loop={50} />
-    }, (props, prevProp) => true);
+    }, () => true);
 
     return (
       <header id="home">
@@ -34,5 +35,12 @@ class Header extends Component {
     );
   }
 }
+
+Header.propTypes = {
+  sharedData: PropTypes.shape({
+    name: PropTypes.string,
+    titles: PropTypes.arrayOf(PropTypes.string)
+  })
+};
 
 export default Header;

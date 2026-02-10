@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import { Icon } from "@iconify/react";
 import reactIcon from "@iconify/icons-logos/react";
 import azureIcon from '@iconify/icons-logos/microsoft-azure';
@@ -10,8 +11,6 @@ class About extends Component {
       var profilepic = "images/" + this.props.sharedBasicInfo.image;
     }
     if (this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.about;
-      var hello = this.props.resumeBasicInfo.description_header;
       var about = this.props.resumeBasicInfo.description;
     }
 
@@ -65,5 +64,14 @@ class About extends Component {
     );
   }
 }
+
+About.propTypes = {
+  resumeBasicInfo: PropTypes.shape({
+    description: PropTypes.string
+  }),
+  sharedBasicInfo: PropTypes.shape({
+    image: PropTypes.string
+  })
+};
 
 export default About;

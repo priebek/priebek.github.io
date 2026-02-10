@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class Skills extends Component {
   render() {
@@ -40,5 +41,19 @@ class Skills extends Component {
     );
   }
 }
+
+Skills.propTypes = {
+  sharedSkills: PropTypes.shape({
+    icons: PropTypes.arrayOf(PropTypes.shape({
+      name: PropTypes.string,
+      class: PropTypes.string
+    }))
+  }),
+  resumeBasicInfo: PropTypes.shape({
+    section_name: PropTypes.shape({
+      skills: PropTypes.string
+    })
+  })
+};
 
 export default Skills;

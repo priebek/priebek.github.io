@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import ProjectDetailsModal from "./ProjectDetailsModal";
 
 class Projects extends Component {
@@ -89,5 +90,21 @@ class Projects extends Component {
     );
   }
 }
+
+Projects.propTypes = {
+  resumeProjects: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string,
+    startDate: PropTypes.string,
+    description: PropTypes.string,
+    images: PropTypes.arrayOf(PropTypes.string),
+    url: PropTypes.string,
+    technologies: PropTypes.array
+  })),
+  resumeBasicInfo: PropTypes.shape({
+    section_name: PropTypes.shape({
+      projects: PropTypes.string
+    })
+  })
+};
 
 export default Projects;

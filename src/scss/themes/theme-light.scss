@@ -26,7 +26,7 @@ $light-glow: rgba(8, 145, 178, 0.15);
 body[data-theme="light"] {
    background-color: $light-bg-primary;
    
-   @import '../src/scss/light-slider.scss';
+   @import '../light-slider.scss';
 
    .slider-tab {
       background-color: $light-bg-tertiary;

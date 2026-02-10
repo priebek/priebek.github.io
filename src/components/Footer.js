@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class Footer extends Component {
   render() {
@@ -34,5 +35,15 @@ class Footer extends Component {
     );
   }
 }
+
+Footer.propTypes = {
+  sharedBasicInfo: PropTypes.shape({
+    social: PropTypes.arrayOf(PropTypes.shape({
+      name: PropTypes.string,
+      url: PropTypes.string,
+      class: PropTypes.string
+    }))
+  })
+};
 
 export default Footer;
